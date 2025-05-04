@@ -72,3 +72,17 @@ ID ZAMÓWIENIA,SKU,ILOŚĆ
    - `Results_ProductQuantityAnalysis.csv`
 
 Pliki CSV możesz otworzyć np. w Excelu lub załadować do narzędzi analitycznych (Power BI, Tableau itp.).
+
+## 🧪 Dane testowe
+
+W repozytorium znajduje się przykładowy plik z danymi testowymi:
+
+- `dane_przykladowe.csv`
+
+Można go użyć do przetestowania działania skryptów bez konieczności przygotowywania własnych danych.
+
+Aby użyć tego pliku:
+
+1. Skopiuj go jako `dane.csv` lub zmodyfikuj nazwy plików wejściowych w skryptach (`input_file = "dane_przykladowe.csv"`).
+2. Uruchom skrypty jak opisano w sekcji **"Jak uruchomić?"**.
+
