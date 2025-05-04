@@ -1,6 +1,6 @@
 # 📊🛒Analiza Sprzedaży Produktów
-Skrypty do analizy danych sprzedażowych z plików CSV, identyfikujące kluczowe wzorce zakupowe.
-## Funkcjonalności  
+Skrypty do analizy danych sprzedażowych z pliku CSV, identyfikujące kluczowe wzorce zakupowe.
+## 🛠️Funkcjonalności  
 
 ### 1. Analiza Par Produktów  
 Wczytuje plik CSV z zamówieniami i produktami, a następnie wyznacza **najczęściej występujące pary produktów** kupowanych razem.
@@ -25,7 +25,7 @@ Identyfikacja najczęściej kupowanych razem produktów oraz sprzedaży wieloszt
 | P-002     | P-009     | 2               | 1003, 1007                     |
 
 **Przykład interpretacji**:  
-Produkty **P-001** i **P-005** były kupowane razem w **3 zamówieniach**, w tym w zamówieniach o ID: 1001, 1005, 1008.
+Produkty **P-001** i **P-005** były kupowane razem w **3 zamówieniach**, w zamówieniach o ID: 1001, 1005, 1008.
 
 ---
 
@@ -38,7 +38,7 @@ Produkty **P-001** i **P-005** były kupowane razem w **3 zamówieniach**, w tym
 | P-003       | 5     | 3               | 1007, 1010, 1013        |
 
 **Przykład interpretacji**:  
-Produkt **P-001** był kupowany w ilości **3 sztuk** w **8 zamówieniach**, w **8 różnych zamówieniach**.
+Produkt **P-001** był kupowany w ilości **3 sztuk** w **8 różnych zamówieniach**.
 
 ---
 
