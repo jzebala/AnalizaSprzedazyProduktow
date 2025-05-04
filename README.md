@@ -50,3 +50,25 @@ ID ZAMÓWIENIA,SKU,ILOŚĆ
 1001,SKU-07,1
 1002,SKU-09,3
 ```
+## ▶️ Jak uruchomić?
+
+1. Upewnij się, że masz zainstalowanego **Pythona 3.8 lub nowszego** oraz bibliotekę `pandas`.
+
+2. Zainstaluj pakiet (jeśli nie masz `pandas`):
+   ```bash
+   pip install pandas
+   ```
+
+3. Umieść plik `dane.csv` w tym samym folderze, co skrypty.
+
+4. Uruchom skrypty za pomocą poleceń:
+   ```bash
+   python ProductPairs.py
+   python ProductQuantityAnalysis.py
+   ```
+
+5. Wyniki zostaną zapisane automatycznie do plików:
+   - `Results_ProductPairs.csv`
+   - `Results_ProductQuantityAnalysis.csv`
+
+Pliki CSV możesz otworzyć np. w Excelu lub załadować do narzędzi analitycznych (Power BI, Tableau itp.).
