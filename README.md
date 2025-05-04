@@ -1,2 +1,52 @@
-# AnalizaSprzedazyProduktow
+# 📊🛒Analiza Sprzedaży Produktów
 Skrypty do analizy danych sprzedażowych z plików CSV, identyfikujące kluczowe wzorce zakupowe.
+## Funkcjonalności  
+
+### 1. Analiza Par Produktów  
+Wczytuje plik CSV z zamówieniami i produktami, a następnie wyznacza **najczęściej występujące pary produktów** kupowanych razem.
+
+### 2. Analiza Sprzedaży Wielosztukowej  
+Identyfikuje produkty, które były sprzedawane **w ilości >1 szt. w ramach pojedynczego zamówienia**, wraz z liczbą takich zamówień.
+
+## 📌 Dlaczego warto analizować dane sprzedażowe?
+Identyfikacja najczęściej kupowanych razem produktów oraz sprzedaży wielosztukowej pozwala:
+- **Optymalizować promocje** – tworzyć pakiety produktowe lub oferty bundlowe, które zwiększają średnią wartość zamówienia.
+- **Personalizować rekomendacje** – sugerować klientom produkty komplementarne (np. "inni kupowali także...").
+- **Planować kampanie marketingowe** – skupiać się na kombinacjach produktów o wysokiej sprzedaży.
+- **Zarządzać zapasami** – przewidywać popyt na produkty często kupowane w zestawach.
+
+## 📊 Przykładowe wyniki
+### 1. Pary produktów
+
+| Product1 | Product2 | Count | OrderIDs |
+|-----------|-----------|----------------:|-------------------------------:|
+| P-001     | P-005     | 3               | 1001, 1005, 1008               |
+| P-003     | P-007     | 5               | 1002, 1009, 1011, 1015, 1016   |
+| P-002     | P-009     | 2               | 1003, 1007                     |
+
+**Przykład interpretacji**:  
+Produkty **P-001** i **P-005** były kupowane razem w **3 zamówieniach**, w tym w zamówieniach o ID: 1001, 1005, 1008.
+
+---
+
+### 2. Sprzedaż wielosztukowa
+
+| SKU | ILOŚĆ | LICZBA_WYSTĄPIEŃ | ZAMÓWIENIA |
+|-------------|------:|----------------:|------------------------:|
+| P-001       | 3     | 8               | 1002, 1005, 1008, ..., 1015 |
+| P-005       | 2     | 14              | 1001, 1003, 1006, ..., 1014 |
+| P-003       | 5     | 3               | 1007, 1010, 1013        |
+
+**Przykład interpretacji**:  
+Produkt **P-001** był kupowany w ilości **3 sztuk** w **8 zamówieniach**, w **8 różnych zamówieniach**.
+
+---
+
+## 📂 Format danych wejściowych
+Wymagany plik CSV (`dane.csv`) musi zawierać dokładnie 3 kolumny:
+```csv
+ID ZAMÓWIENIA,SKU,ILOŚĆ
+1001,SKU-04,2
+1001,SKU-07,1
+1002,SKU-09,3
+```
