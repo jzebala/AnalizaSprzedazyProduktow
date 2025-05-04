@@ -18,7 +18,7 @@ Identyfikacja najczęściej kupowanych razem produktów oraz sprzedaży wieloszt
 ## 📊 Przykładowe wyniki
 ### 1. Pary produktów
 
-| Product1 | Product2 | Count | OrderIDs |
+| PRODUKT 1 | PRODUKT 2 | ILOŚĆ | ZAMÓWIENIA |
 |-----------|-----------|----------------:|-------------------------------:|
 | P-001     | P-005     | 3               | 1001, 1005, 1008               |
 | P-003     | P-007     | 5               | 1002, 1009, 1011, 1015, 1016   |
