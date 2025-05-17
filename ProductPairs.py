@@ -42,7 +42,7 @@ def compute_metrics(pairs_counter, orders_map, sku_counts, total_orders):
         "ILOŚĆ",
         "SUPPORT",
         "CONFIDENCE P1→P2",
-        "LIFT P1→P2",
+        "LIFT",
         "ZAMÓWIENIA"
     ])
 
