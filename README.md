@@ -42,6 +42,28 @@ Produkt **P-001** był kupowany w ilości **3 sztuk** w **8 różnych zamówieni
 
 ---
 
+## 🔍 Analiza Asocjacyjna – Opis Metryk
+Skrypt analizuje, które produkty są często kupowane razem, wykorzystując klasyczne metryki analizy asocjacyjnej:
+- **Support** – jak często para produktów `P1` i `P2` występuje razem we wszystkich zamówieniach.  
+- **Confidence** – jak często kupowany jest `P2`, jeśli klient kupił `P1`.  
+*(metryka asymetryczna: `P1→P2` ≠ `P2→P1`)*
+- **Lift** – jak bardzo obecność `P1` zwiększa prawdopodobieństwo zakupu `P2`, względem niezależnego występowania.  
+Interpretacja:
+- `lift > 1` – pozytywna zależność (produkty współwystępują częściej niż losowo)
+- `lift = 1` – brak zależności
+- `lift < 1` – negatywna zależność
+
+Metryki te pomagają wykrywać produkty, które warto promować razem lub analizować pod kątem nawyków zakupowych klientów.
+
+---
+
+📌 **Uwaga:**  
+Domyślnie skrypt **nie oblicza metryk** (support, confidence, lift).
+Jeśli chcesz otrzymać pełną analizę z metrykami, ustaw w kodzie:
+```python
+calculate_metrics = True
+```
+
 ## 📂 Format danych wejściowych
 Wymagany plik CSV (`dane.csv`) musi zawierać dokładnie 3 kolumny:
 ```csv
@@ -85,4 +107,6 @@ Aby użyć tego pliku:
 
 1. Skopiuj go jako `dane.csv` lub zmodyfikuj nazwy plików wejściowych w skryptach (`input_file = "dane_przykladowe.csv"`).
 2. Uruchom skrypty jak opisano w sekcji **"Jak uruchomić?"**.
+
+
 
