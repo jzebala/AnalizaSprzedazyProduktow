@@ -7,7 +7,7 @@ input_file = "dane.csv"
 output_file = "Results_ProductPairs.csv"
 
 # Flaga sterująca obliczaniem wskaźników
-calculate_metrics = True  # Ustaw na False, aby wyłączyć liczenie support/confidence/lift
+calculate_metrics = False  # Ustaw na True, aby włączyć liczenie support/confidence/lift
 
 try:
     # Wczytanie pliku CSV
